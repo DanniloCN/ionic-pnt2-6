@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Atividade PNT 2</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item text-center>
+    <ion-label color="{{textColor}}" class="text-size"
+      >{{personagem}}</ion-label
+    >
+  </ion-item>
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col>
+        <ion-img width="180" height="180" src="{{imagem}}"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-label>Qual personagem prepara os hamburgueres de siri?</ion-label>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col>
+        <button ion-button (click)="clickBob()" class="bob">Bob Esponja</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="clickPatrick()" class="patrick">
+          Patrick
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-col text-center>
+      <button ion-button (click)="clickReplay()">Recomeçar</button>
+    </ion-col>
+  </ion-grid>
+</ion-content>
